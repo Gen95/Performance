@@ -29,43 +29,7 @@
             n.l = !0,
             n.exports
     }
-    o.e = function(t) {
-        var e = n[t];
-        if (0 === e)
-            return new Promise(function(t) {
-                    t()
-                }
-            );
-        if (e)
-            return e[2];
-        var i = new Promise(function(i, o) {
-                e = n[t] = [i, o]
-            }
-        );
-        e[2] = i;
-        var r = document.getElementsByTagName("head")[0]
-            , a = document.createElement("script");
-        a.type = "text/javascript",
-            a.charset = "utf-8",
-            a.async = !0,
-            a.timeout = 12e4,
-        o.nc && a.setAttribute("nonce", o.nc),
-            a.src = o.p + "" + {
-                0: "9b10f65b0c7e7a1d8693",
-                1: "7641180249a9d7be3cfa"
-            }[t] + ".js";
-        var s = setTimeout(l, 12e4);
-        function l() {
-            a.onerror = a.onload = null,
-                clearTimeout(s);
-            var e = n[t];
-            0 !== e && (e && e[1](new Error("Loading chunk " + t + " failed.")),
-                n[t] = void 0)
-        }
-        return a.onerror = a.onload = l,
-            r.appendChild(a),
-            i
-    }
+    o.e = function(t) {}
         ,
         o.m = t,
         o.c = i,
